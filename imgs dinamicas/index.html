@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Abra esse site em dispositivos com tanhos de telas diferentes</p>
+    <h3>Imagem com max-width</h3>
+    <picture>
+        <source media="(max-width:725px)" srcset="img-p.jpg" type="image/jpg">
+        <source media="(max-width:1025px)" srcset="img-m.jpg" type="image/jpg">
+        <img src="img-g.jpg" alt="imagem flexivel">
+
+    </picture>
+
+    <h3>Imagem com min-width</h3>
+    <picture>
+        <source media="(min-width:1025px)" srcset="img-g.jpg" type="image/jpg">
+        <source media="(min-width:725px)" srcset="img-m.jpg" type="image/jpg">
+        <img src="img-p.jpg" alt="imagem flexivel">
+
+    </picture>
+</body>
+</html>
